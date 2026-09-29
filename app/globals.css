@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cream: #F8F4EC;
+  --color-ink: #141414;
+  --color-mustard: #EDB13E;
+  --color-google-blue: #4C80F0;
+  --color-google-red: #D9503F;
+  --color-google-green: #4FA35A;
+  --color-google-yellow: #F4B400;
+  --color-lavender: #EFF2FB;
+  --color-editor: #171717;
+
+  --font-space-grotesk: var(--font-space-grotesk), sans-serif;
+  --font-jetbrains-mono: var(--font-jetbrains-mono), monospace;
+  --font-inter: var(--font-inter), sans-serif;
+}
+
+/* Custom Font Utilities */
+.font-space-grotesk {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+.font-mono, .font-jetbrains-mono {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+/* Custom Drafting Grid Background & Base Reset */
+body {
+  background-color: #F8F4EC;
+  color: #141414;
+  font-family: var(--font-inter), sans-serif;
+  background-image: 
+    linear-gradient(to right, rgba(20, 20, 20, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(20, 20, 20, 0.04) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Neubrutalist Hard Shadows */
+.brutal-shadow {
+  box-shadow: 4px 4px 0px #141414;
+}
+
+.brutal-shadow-sm {
+  box-shadow: 2px 2px 0px #141414;
+}
+
+.brutal-shadow-lg {
+  box-shadow: 6px 6px 0px #141414;
+}
+
+.brutal-shadow-pressed {
+  box-shadow: 1px 1px 0px #141414;
+  transform: translate(3px, 3px);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F8F4EC;
+  border-left: 1px solid #141414;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #EDB13E;
+}
